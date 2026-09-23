@@ -1,14 +1,39 @@
-# Zig build artifacts
-zig-out/
-zig-cache/
-.zig-cache/
+.idea/
+.vscode/
 
-# OS metadata
-.DS_Store
-Thumbs.db
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
 
-# Editor directories
+# Test output
+*.test
+*.out
+coverage.html
+coverage.out
+
+# Build artifacts
+/bin/
+/dist/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Editor artifacts
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
+
+# OS artifacts
+.DS_Store
+Thumbs.db
